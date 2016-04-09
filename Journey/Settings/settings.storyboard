@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="ByG-3z-nMh">
+            <objects>
+                <viewController storyboardIdentifier="main" id="9Jq-8R-vf5" customClass="SettingsViewController" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="36C-Uw-fJ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="eCO-q8-xQ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tb6-Vb-8a0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqi-ga-7GU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YtE-Hf-fTg">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAL-yl-qVW" customClass="PrimaryButton" customModule="Journey" customModuleProvider="target">
+                                            <rect key="frame" x="35" y="232" width="250" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="I58-50-4Hm"/>
+                                                <constraint firstAttribute="width" constant="250" id="beK-cG-63S"/>
+                                            </constraints>
+                                            <state key="normal" title="Send feedback"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="feedbackButtonPressed:" destination="9Jq-8R-vf5" eventType="touchUpInside" id="zFs-J9-3SF"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZe-Wh-YnV" customClass="PrimaryButton" customModule="Journey" customModuleProvider="target">
+                                            <rect key="frame" x="35" y="302" width="250" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="250" id="IjN-tC-P32"/>
+                                                <constraint firstAttribute="height" constant="45" id="LuC-HP-7uw"/>
+                                            </constraints>
+                                            <state key="normal" title="Rate us"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="rateButtonPressed:" destination="9Jq-8R-vf5" eventType="touchUpInside" id="WTX-ST-BQ4"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Journey v1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLs-5j-4A8">
+                                            <rect key="frame" x="95" y="159" width="131" height="28"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="23"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="bLs-5j-4A8" firstAttribute="centerX" secondItem="YtE-Hf-fTg" secondAttribute="centerX" id="2j6-N9-b1O"/>
+                                        <constraint firstItem="AZe-Wh-YnV" firstAttribute="top" secondItem="jAL-yl-qVW" secondAttribute="bottom" constant="25" id="2n7-3I-fvk"/>
+                                        <constraint firstItem="jAL-yl-qVW" firstAttribute="centerX" secondItem="YtE-Hf-fTg" secondAttribute="centerX" id="BOv-zz-4k4"/>
+                                        <constraint firstItem="jAL-yl-qVW" firstAttribute="centerY" secondItem="YtE-Hf-fTg" secondAttribute="centerY" constant="-30" id="RBZ-Ik-e88"/>
+                                        <constraint firstItem="jAL-yl-qVW" firstAttribute="top" secondItem="bLs-5j-4A8" secondAttribute="bottom" constant="45" id="mp2-rv-rre"/>
+                                        <constraint firstItem="AZe-Wh-YnV" firstAttribute="centerX" secondItem="YtE-Hf-fTg" secondAttribute="centerX" id="wZV-3V-Ku5"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na3-2w-FC0">
+                                <rect key="frame" x="275" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Gpy-NQ-EdZ"/>
+                                    <constraint firstAttribute="width" constant="40" id="Wki-ri-FAZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="icon-close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="9Jq-8R-vf5" eventType="touchUpInside" id="U7O-xg-0E9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iqi-ga-7GU" firstAttribute="leading" secondItem="tb6-Vb-8a0" secondAttribute="leading" id="2kr-LL-5lf"/>
+                            <constraint firstItem="eCO-q8-xQ9" firstAttribute="top" secondItem="Iqi-ga-7GU" secondAttribute="bottom" id="4YX-XO-Xkb"/>
+                            <constraint firstItem="Iqi-ga-7GU" firstAttribute="top" secondItem="36C-Uw-fJ9" secondAttribute="bottom" constant="-20" id="HPw-8i-Kgf"/>
+                            <constraint firstItem="Na3-2w-FC0" firstAttribute="top" secondItem="36C-Uw-fJ9" secondAttribute="bottom" id="fRQ-Hi-XoT"/>
+                            <constraint firstAttribute="trailing" secondItem="Na3-2w-FC0" secondAttribute="trailing" constant="5" id="nJf-XR-fIb"/>
+                            <constraint firstAttribute="trailing" secondItem="Iqi-ga-7GU" secondAttribute="trailing" id="qVB-Xo-vCz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlm-KB-5Px" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-close" width="15" height="15"/>
+    </resources>
+</document>

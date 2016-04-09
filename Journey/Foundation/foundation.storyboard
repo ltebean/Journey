@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Date Picker-->
+        <scene sceneID="y3Z-Ju-JM8">
+            <objects>
+                <viewController storyboardIdentifier="datePicker" id="eI1-mV-Ff1" customClass="DatePicker" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jAI-1f-fwt"/>
+                        <viewControllerLayoutGuide type="bottom" id="5qJ-yI-qCJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0OE-4x-sW5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-Tf-w1A">
+                                <rect key="frame" x="0.0" y="308" width="320" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kXI-hG-k1g">
+                                <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="ljx-fc-4ka"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="477565847.47224402">
+                                    <!--2016-02-19 09:10:47 +0000-->
+                                </date>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqY-Q9-5Nr">
+                                <rect key="frame" x="0.0" y="308" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="55C-ZU-cWW"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem width="49" style="plain" id="W2F-gT-RcQ">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TAa-pX-EZU">
+                                            <rect key="frame" x="16" y="6" width="49" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="eI1-mV-Ff1" eventType="touchUpInside" id="1bw-8F-wzh"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LZh-mk-QBO"/>
+                                    <barButtonItem width="38" style="plain" id="Xx7-6x-0Ag">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Ae-pI-Egv">
+                                            <rect key="frame" x="266" y="7" width="38" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                            <state key="normal" title="Done">
+                                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="doneButtonPressed:" destination="eI1-mV-Ff1" eventType="touchUpInside" id="Rpo-EI-q6T"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xRZ-Tf-w1A" firstAttribute="trailing" secondItem="kXI-hG-k1g" secondAttribute="trailing" id="1Nh-Oz-swI"/>
+                            <constraint firstItem="xRZ-Tf-w1A" firstAttribute="bottom" secondItem="kXI-hG-k1g" secondAttribute="bottom" id="JXH-cV-W9K"/>
+                            <constraint firstItem="5qJ-yI-qCJ" firstAttribute="top" secondItem="kXI-hG-k1g" secondAttribute="bottom" id="Wyi-em-Ija"/>
+                            <constraint firstAttribute="trailing" secondItem="kqY-Q9-5Nr" secondAttribute="trailing" id="Y73-EF-yu7"/>
+                            <constraint firstItem="kXI-hG-k1g" firstAttribute="leading" secondItem="0OE-4x-sW5" secondAttribute="leading" id="Zdh-ji-VtT"/>
+                            <constraint firstItem="kXI-hG-k1g" firstAttribute="top" secondItem="kqY-Q9-5Nr" secondAttribute="bottom" id="aFE-uR-Rtu"/>
+                            <constraint firstItem="kqY-Q9-5Nr" firstAttribute="leading" secondItem="0OE-4x-sW5" secondAttribute="leading" id="fpQ-2K-qW5"/>
+                            <constraint firstAttribute="trailing" secondItem="kXI-hG-k1g" secondAttribute="trailing" id="h7N-oE-mHG"/>
+                            <constraint firstItem="xRZ-Tf-w1A" firstAttribute="leading" secondItem="kXI-hG-k1g" secondAttribute="leading" id="jLX-tK-hjG"/>
+                            <constraint firstItem="xRZ-Tf-w1A" firstAttribute="top" secondItem="kqY-Q9-5Nr" secondAttribute="top" id="thT-Ni-Zl2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="kXI-hG-k1g" id="VNY-Kd-jgv"/>
+                        <outlet property="pickerBottom" destination="Wyi-em-Ija" id="KQf-H5-oWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8n-fV-mhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="456"/>
+        </scene>
+    </scenes>
+</document>
